@@ -1,45 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-29T11:56:21 IST" name="Default suite" finished-at="2023-09-29T11:56:42 IST" duration-ms="21360">
+  <suite started-at="2024-02-29T20:21:55 IST" name="Default suite" finished-at="2024-02-29T20:22:04 IST" duration-ms="8748">
     <groups>
     </groups>
-    <test started-at="2023-09-29T11:56:21 IST" name="Default test" finished-at="2023-09-29T11:56:42 IST" duration-ms="21360">
+    <test started-at="2024-02-29T20:21:55 IST" name="Default test" finished-at="2024-02-29T20:22:04 IST" duration-ms="8748">
       <class name="com.qa.indiahr.tests.LoginPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.indiahr.tests.LoginPageTest@117159c0]" started-at="2023-09-29T11:56:21 IST" name="setup" finished-at="2023-09-29T11:56:39 IST" duration-ms="18589" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.indiahr.tests.LoginPageTest@3e27ba32]" started-at="2024-02-29T20:21:55 IST" name="setup" finished-at="2024-02-29T20:22:02 IST" duration-ms="6875" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginPageTitleTest()[pri:0, instance:com.qa.indiahr.tests.LoginPageTest@117159c0]" started-at="2023-09-29T11:56:39 IST" name="loginPageTitleTest" finished-at="2023-09-29T11:56:39 IST" duration-ms="18" status="PASS">
+        <test-method signature="loginPageTitleTest()[pri:0, instance:com.qa.indiahr.tests.LoginPageTest@3e27ba32]" started-at="2024-02-29T20:22:02 IST" name="loginPageTitleTest" finished-at="2024-02-29T20:22:02 IST" duration-ms="28" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method signature="loginPageUrlTest()[pri:1, instance:com.qa.indiahr.tests.LoginPageTest@117159c0]" started-at="2023-09-29T11:56:39 IST" name="loginPageUrlTest" finished-at="2023-09-29T11:56:39 IST" duration-ms="8" status="PASS">
+        <test-method signature="loginPageUrlTest()[pri:1, instance:com.qa.indiahr.tests.LoginPageTest@3e27ba32]" started-at="2024-02-29T20:22:02 IST" name="loginPageUrlTest" finished-at="2024-02-29T20:22:02 IST" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageUrlTest -->
-        <test-method signature="forgotPwdLinkExistsTest()[pri:2, instance:com.qa.indiahr.tests.LoginPageTest@117159c0]" started-at="2023-09-29T11:56:39 IST" name="forgotPwdLinkExistsTest" finished-at="2023-09-29T11:56:39 IST" duration-ms="37" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- forgotPwdLinkExistsTest -->
-        <test-method signature="PrivacyLinkExist()[pri:3, instance:com.qa.indiahr.tests.LoginPageTest@117159c0]" started-at="2023-09-29T11:56:39 IST" name="PrivacyLinkExist" finished-at="2023-09-29T11:56:39 IST" duration-ms="20" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PrivacyLinkExist -->
-        <test-method signature="CheckboxSelected()[pri:4, instance:com.qa.indiahr.tests.LoginPageTest@117159c0]" started-at="2023-09-29T11:56:39 IST" name="CheckboxSelected" finished-at="2023-09-29T11:56:40 IST" duration-ms="165" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckboxSelected -->
-        <test-method signature="isLogoExist()[pri:5, instance:com.qa.indiahr.tests.LoginPageTest@117159c0]" started-at="2023-09-29T11:56:40 IST" name="isLogoExist" finished-at="2023-09-29T11:56:40 IST" duration-ms="18" status="PASS">
+        <test-method signature="isLogoExist()[pri:2, instance:com.qa.indiahr.tests.LoginPageTest@3e27ba32]" started-at="2024-02-29T20:22:02 IST" name="isLogoExist" finished-at="2024-02-29T20:22:03 IST" duration-ms="573" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isLogoExist -->
-        <test-method signature="doLoginTest()[pri:6, instance:com.qa.indiahr.tests.LoginPageTest@117159c0]" started-at="2023-09-29T11:56:40 IST" name="doLoginTest" finished-at="2023-09-29T11:56:42 IST" duration-ms="2411" status="PASS">
+        <test-method signature="forgotPwdLinkExistsTest()[pri:3, instance:com.qa.indiahr.tests.LoginPageTest@3e27ba32]" started-at="2024-02-29T20:22:03 IST" name="forgotPwdLinkExistsTest" finished-at="2024-02-29T20:22:03 IST" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgotPwdLinkExistsTest -->
+        <test-method signature="privacyPolicyTest()[pri:4, instance:com.qa.indiahr.tests.LoginPageTest@3e27ba32]" started-at="2024-02-29T20:22:03 IST" name="privacyPolicyTest" finished-at="2024-02-29T20:22:03 IST" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- privacyPolicyTest -->
+        <test-method signature="loginOtpTest()[pri:5, instance:com.qa.indiahr.tests.LoginPageTest@3e27ba32]" started-at="2024-02-29T20:22:03 IST" name="loginOtpTest" finished-at="2024-02-29T20:22:03 IST" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginOtpTest -->
+        <test-method signature="CheckboxSelected()[pri:6, instance:com.qa.indiahr.tests.LoginPageTest@3e27ba32]" started-at="2024-02-29T20:22:03 IST" name="CheckboxSelected" finished-at="2024-02-29T20:22:03 IST" duration-ms="168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckboxSelected -->
+        <test-method signature="doLoginTest()[pri:7, instance:com.qa.indiahr.tests.LoginPageTest@3e27ba32]" started-at="2024-02-29T20:22:03 IST" name="doLoginTest" finished-at="2024-02-29T20:22:04 IST" duration-ms="831" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.indiahr.tests.LoginPageTest@117159c0]" started-at="2023-09-29T11:56:42 IST" name="tearDown" finished-at="2023-09-29T11:56:42 IST" duration-ms="62" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.indiahr.tests.LoginPageTest@3e27ba32]" started-at="2024-02-29T20:22:04 IST" name="tearDown" finished-at="2024-02-29T20:22:04 IST" duration-ms="157" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

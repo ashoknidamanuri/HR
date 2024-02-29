@@ -5,9 +5,9 @@
     <classes>
       <class name="com.qa.indiahr.tests.LoginPageTest">
         <methods>
+          <include name="isLogoExist"/>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="doLoginTest"/>
         </methods>
       </class> <!-- com.qa.indiahr.tests.LoginPageTest -->
     </classes>

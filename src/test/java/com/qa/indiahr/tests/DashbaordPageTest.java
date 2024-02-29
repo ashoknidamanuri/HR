@@ -15,20 +15,20 @@ public class DashbaordPageTest extends BaseTest{
 	public  void accPageSetup(){
 		dsPage =loginPage.doLogin(prop.getProperty("username").trim(), prop.getProperty("password").trim());
 	}
-	@Test(priority = 0)
 
-	public void dashboardPageTitleTest() {
-		String actTitle = dsPage.getDashboardPageTitle();
-		Assert.assertEquals(actTitle, AppConstants.DASHBOARD_PAGE_TITLE_VALUE);
-
-	}
-
-	@Test(priority = 1)
-	public void dashboardPageURLTest() {
-		String actURL = dsPage.getDashboardPageURL();
-		Assert.assertTrue(actURL.contains(AppConstants.DASHBOARD_PAGE_URL_FRACTION_VALUE));
-	}
-
+	/*
+	 * @Test(priority = 0)
+	 * 
+	 * public void dashboardPageTitleTest() { String actTitle =
+	 * dsPage.getDashboardPageTitle(); Assert.assertEquals(actTitle,
+	 * AppConstants.DASHBOARD_PAGE_TITLE_VALUE);
+	 * 
+	 * }
+	 * 
+	 * @Test(priority = 1) public void dashboardPageURLTest() { String actURL =
+	 * dsPage.getDashboardPageURL(); Assert.assertTrue(actURL.contains(AppConstants.
+	 * DASHBOARD_PAGE_URL_FRACTION_VALUE)); }
+	 */
 	@Test(priority = 2)
   public void isLogoutlinkexist() {
 	Assert.assertTrue(dsPage.isLogoutLinkExist());

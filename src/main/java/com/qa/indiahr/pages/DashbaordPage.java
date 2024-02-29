@@ -35,19 +35,20 @@ public class DashbaordPage {
 		eleUtil = new ElementUtil(driver);
 	}
 
-	public String getDashboardPageTitle() {
-		String title = eleUtil.waitForTitleIsAndFetch(AppConstants.DEFAULT_MEDIUM_TIMEOUT, AppConstants.DASHBOARD_PAGE_TITLE_VALUE);
-		System.out.println("Acc page title is : " + title);
-		return title;
-	}
-
-	public String getDashboardPageURL() {
-		String url = eleUtil.waitForURLContainsAndFetch(AppConstants.DEFAULT_MEDIUM_TIMEOUT, AppConstants.DASHBOARD_PAGE_URL_FRACTION_VALUE);
-		System.out.println("Acc page url : " + url);
-		return url;
+	/*
+	 * public String getDashboardPageTitle() { String title =
+	 * eleUtil.waitForTitleIsAndFetch(AppConstants.DEFAULT_MEDIUM_TIMEOUT,
+	 * AppConstants.DASHBOARD_PAGE_TITLE_VALUE);
+	 * System.out.println("Acc page title is : " + title); return title; }
+	 * 
+	 * public String getDashboardPageURL() { String url =
+	 * eleUtil.waitForURLContainsAndFetch(AppConstants.DEFAULT_MEDIUM_TIMEOUT,
+	 * AppConstants.DASHBOARD_PAGE_URL_FRACTION_VALUE);
+	 * System.out.println("Acc page url : " + url); return url;
+	 */
 		
 		
-	}
+	//}
 	
 	public boolean isLogoutLinkExist() {
 		eleUtil.clickWhenReady(AppConstants.DEFAULT_MEDIUM_TIMEOUT, myprofile);

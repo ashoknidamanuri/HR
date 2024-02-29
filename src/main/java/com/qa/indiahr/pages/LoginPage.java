@@ -1,7 +1,11 @@
 package com.qa.indiahr.pages;
 
+import java.util.NoSuchElementException;
+import java.util.concurrent.TimeoutException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import com.qa.indiahr.constants.AppConstants;
 import com.qa.indiahr.utils.ElementUtil;
@@ -14,13 +18,16 @@ public class LoginPage {
 	private ElementUtil eleUtil;
 
 	//private locators
-	private By Username= By.xpath("//input[contains(@id,'Name')]");
-	private By Password= By.xpath("//input[contains(@placeholder,'Enter Password')]");
-	private By Login=By.xpath("//button[contains(.,'Sign In')]");
+	private By Username= By.xpath("//input[contains(@id,'login_Name')]");
+	private By Password= By.xpath("//input[contains(@type,'password')]");
+	private By Login=By.xpath("//button[@type='submit'][contains(.,'Sign In')]");
 	private By forgotpasswordLink = By.linkText("Forgot password");
 	private By privacyLink = By.linkText("Privacy Policy");
+	private By loginOtp = By.xpath("//button[contains(.,'Login with TOTP')]");
+	
+
 	private By checkbox= By.xpath("//input[contains(@id,'rememberMeCheck')]");
-	private By logo= By.xpath("//img[contains(@alt,'logo')]");
+	private By logo= By.xpath("//img[@src='./static/media/hrms-logo.33705d65c38cc03d171d.png']");
 	
 	
 	//Page constructor 	
@@ -43,22 +50,29 @@ public class LoginPage {
 		System.out.println("Login page url is :" +  " "+ url);
 		return url;
 	}
-	public boolean isLogoPresent() {
-		return eleUtil.waitForElementPresence(logo, AppConstants.DEFAULT_MEDIUM_TIMEOUT).isDisplayed();
+	
+	 public boolean isLogoPresent() {
+		 return eleUtil.waitForElementVisible(logo, AppConstants.DEFAULT_LONG_TIMEOUT).isDisplayed();
+		 }
+	 
+	
+	 public boolean isForgotPwdLinkExists() { 
+		 return eleUtil.waitForElementVisible(forgotpasswordLink,  AppConstants.DEFAULT_MEDIUM_TIMEOUT).isDisplayed();
+	 }
+	  
+	
+	
+	public void isCheckBoxSelected() {
+		eleUtil.doClickWithActionsAndWait(AppConstants.DEFAULT_MEDIUM_TIMEOUT, checkbox);
 		
-	}
-
-	public boolean isForgotPwdLinkExists() {
-		return eleUtil.waitForElementVisible(forgotpasswordLink, AppConstants.DEFAULT_MEDIUM_TIMEOUT).isDisplayed();
-
+		
 	}
 	public boolean isPrivacyLinkExist() {
 		return eleUtil.waitForElementPresence(privacyLink, AppConstants.DEFAULT_MEDIUM_TIMEOUT).isDisplayed();
 		
 	}
-	public void isCheckBoxSelected() {
-		eleUtil.doClickWithActionsAndWait(AppConstants.DEFAULT_MEDIUM_TIMEOUT, checkbox);
-		
+	public boolean isloginOTPExist() {
+		return eleUtil.waitForElementPresence(loginOtp, AppConstants.DEFAULT_MEDIUM_TIMEOUT).isDisplayed();
 		
 	}
 	

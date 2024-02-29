@@ -222,6 +222,7 @@ public class ElementUtil {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut));
 		return wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(locator));
 	}
+	
 
 	/**
 	 * 

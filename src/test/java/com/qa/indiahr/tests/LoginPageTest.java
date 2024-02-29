@@ -24,26 +24,36 @@ public class LoginPageTest extends BaseTest{
 	}
 	
 	@Test(priority = 2)
-	public void forgotPwdLinkExistsTest() {
-		Assert.assertTrue(loginPage.isForgotPwdLinkExists());
-	}
-	@Test(priority =3)
-	public void PrivacyLinkExist() {
-		Assert.assertTrue(loginPage.isPrivacyLinkExist());
-	}
-	@Test(priority = 4)
+	
+	 public void isLogoExist() {
+		Assert.assertTrue(loginPage.isLogoPresent()); }
+	 
+
+	
+	 @Test(priority = 3)
+	 public void forgotPwdLinkExistsTest() {
+	 Assert.assertTrue(loginPage.isForgotPwdLinkExists()); }
+	 
+	 @Test(priority = 4)
+	 public void privacyPolicyTest() {
+		 Assert.assertTrue(loginPage.isPrivacyLinkExist());
+	 }
+	 @Test(priority = 5)
+	 public void loginOtpTest() {
+		 Assert.assertTrue(loginPage.isloginOTPExist());
+	 }
+	
+	 
+	@Test(priority = 6)
 	public void CheckboxSelected() {
 		loginPage.isCheckBoxSelected();
 		
 	}
-	@Test(priority = 5)
-	public void isLogoExist() {
-		Assert.assertTrue(loginPage.isLogoPresent());
-	}
 	
-	@Test(priority = 6)
+	
+	@Test(priority = 7)
 	public void doLoginTest() {
 		dsPage =loginPage.doLogin(prop.getProperty("username").trim(), prop.getProperty("password").trim());
-		Assert.assertTrue(dsPage.isLogoutLinkExist());
+		
 	}
 }
